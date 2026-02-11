@@ -9,6 +9,8 @@ Adding an E22P-868M30S LoRa module makes it look like the Heltec Vision Master T
 - Better LoRa module (much, much more power and sensitivity)
 - Better LCD quality (The screen bus is 8 bits wide, which allows for greater fluidity)
 
+<img src="images/T-Display-S3 E22P-868M30S-SMA 3D REAL.jpg" width="800">
+
 # T-Display-S3 - E22P-868M30S add-on board with IPX connector
 
 <img src="images/T-Display-S3 E22P-868M30S-IPX 3D 2.png" width="400">
@@ -21,5 +23,6 @@ Adding an E22P-868M30S LoRa module makes it look like the Heltec Vision Master T
 <img src="images/T-Display-S3 E22P-868M30S-SMA 3D 2.png" width="600">
 <img src="images/T-Display-S3 E22P-868M30S-SMA 3D 3.png" width="600">
 <img src="images/T-Display-S3 E22P-868M30S-SMA 3D 4.png" width="400">
+
 
 
