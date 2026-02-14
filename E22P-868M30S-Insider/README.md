@@ -25,6 +25,14 @@ This is essential for use in urban areas with Cellular mobile networks.<br>
 Several surface acoustic wave (SAW) filters in E22P-868M30S is a game changer !
 <br>
 <br>
+Change of pin name from E22-900M30S to E22P-868M30S :<br>
+- RXEN pin is now EN pin
+- TXEN pin is now T/R CTRL pin
+
+The EN pin must now always be set to ON.<br>
+However, to ensure good confuguration, full power and reduced floor noise,<br><b>it must be grounded for 3 seconds during startup !</b><br>
+<br>
+<br>
 <img src="images/E22P-868M30S - Outside.jpg" height="1000">
 
 <img src="images/E22P-868M30S - Inside 1.jpg" height="1000">
