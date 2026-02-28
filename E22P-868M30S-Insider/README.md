@@ -14,6 +14,19 @@ Compared to the previous old generation E22-900M30S,<br>
 these modules significantly improve out-of-band spurious signal suppression capabilities,<br>
 and offer enhanced anti-interference capabilities as well as increased receive sensitivity.<br>
 
+<br>
+
+Change of pin name from E22-900M30S to E22P-868M30S :
+- RXEN pin is now EN pin
+- TXEN pin is now T/R CTRL pin
+
+The EN pin must now always be set to ON.<br>
+However, to ensure good confuguration, full power and reduced floor noise,<br><b>it must be grounded for 3 seconds during startup !</b>
+
+<br>
+
+## SF8301
+
 The SF8301 is a Surface Acoustic Wave (SAW) filter, commonly used for high-frequency signal conditioning :
 - Center Frequency: 868 MHz
 - Bandwidth: 10 MHz
@@ -23,16 +36,37 @@ This ensures smooth communication between communication devices while suppressin
 This is essential for use in urban areas with Cellular mobile networks.<br>
 <br>
 Several surface acoustic wave (SAW) filters in E22P-868M30S is a game changer !
-<br>
-<br>
-Change of pin name from E22-900M30S to E22P-868M30S :<br>
-- RXEN pin is now EN pin
-- TXEN pin is now T/R CTRL pin
 
-The EN pin must now always be set to ON.<br>
-However, to ensure good confuguration, full power and reduced floor noise,<br><b>it must be grounded for 3 seconds during startup !</b><br>
+<br>
+
+## KCT8102L
+
+KCT8102L is a highly-integrated, RF Front-End Integrated Circuit which incorporates key RF functionality needed for a TDD-mode operating in the 860M to 930MHz ISM frequency bands. <br>
+KCT8102L is integrated with a power amplifier (PA), a low noise amplifier (LNA) with bypass, and a single-pole, double-throw (SPDT) switch all in one device. <br>
+KCT8102L is designed for ease of use and maximum flexibility, with different matching circuits, KCT8102L could achieve high power and high efficiency two operation status.<br>
+KCT8102L has simple and low-voltage 1.6 to 3.6V control logic, and wide supply voltage range from 3.0 to 5.25V allowing the KCT8102L to be used in battery powered applications.<br>
+KCT8102L is assembled in a compact, low-profile 3x3x0.77mm 16-lead LGA package. KCT8102L is the ideal RF front-end solution for implementing sub-GHz from 860M to 930MHz supporting multiple standards including LP-WAN (LoRa, Sigfox, etc.), Wi-SUN, and other loT applications.<br>
+<br>
+Integrated high-performance 860 to 930MHz Front-End Module<br>
+Nominated voltage at 3.3V & 4.2V & 5V<br>
+<br>
+<b>+32.5dBm saturated output power at 5.0V High Power Matching</b><br>
++31.0dBm saturated output power at 5.0V High Efficiency Matching<br>
++31.0dBm saturated output power at 4.2V High Power Matching<br>
++29.5dBm saturated output power at 4.2V High Efficiency Matching<br>
++29.0dBm saturated output power at 3.3V High Power Matching<br>
++27.5dBm saturated output power at 3.3V High Efficiency Matching<br>
+<br>
+Integrated LNA with noise figure of 1.7dB at 5V & 4.2V & 3.3V<br>
+Receive bypass path with low loss: 2.0dB at 5V & 4.2V & 3.3V<br>
+Support external Receive filter<br>
+ESD Protection Circuitry on All Ports<br>
+Small package: LGA-16L, 3×3×0.77mm (MSL3, 260°C per JEDEC J-STD-020)<br>
+RoHS and REACH Compliant<br>
+
 <br>
 <br>
+
 <img src="images/E22P-868M30S - Outside.jpg" height="1000">
 
 <img src="images/E22P-868M30S - Inside 1.jpg" height="1000">
