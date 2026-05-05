@@ -29,35 +29,35 @@ However, to ensure good confuguration, full power and reduced floor noise,<br><b
   <thead>
     <tr>
       <th>Pset</th>
-      <th>5,0 V</th>
-      <th>4,2 V</th>
-      <th>3,7 V</th>
-      <th>3,3 V</th>
+      <th>5.0 V</th>
+      <th>4.2 V</th>
+      <th>3.7 V</th>
+      <th>3.3 V</th>
     </tr>
   </thead>
   <tbody>
-    <tr><th>1</th><td>21,7</td><td>21,2</td><td>20,9</td><td>20,7</td></tr>
-    <tr><th>2</th><td>22,7</td><td>22,2</td><td>21,9</td><td>21,7</td></tr>
-    <tr><th>3</th><td>23,7</td><td>23,2</td><td>22,9</td><td>22,7</td></tr>
-    <tr><th>4</th><td>24,7</td><td>24,2</td><td>23,9</td><td>23,7</td></tr>
-    <tr><th>5</th><td>25,7</td><td>25,2</td><td>24,9</td><td>24,7</td></tr>
-    <tr><th>6</th><td>26,6</td><td>26,1</td><td>25,8</td><td>25,6</td></tr>
-    <tr><th>7</th><td>27,6</td><td>27,1</td><td>26,8</td><td>26,6</td></tr>
-    <tr><th>8</th><td>28,5</td><td>27,9</td><td>27,6</td><td>27,4</td></tr>
-    <tr><th>9</th><td>29,4</td><td>28,6</td><td>28,3</td><td>28,0</td></tr>
-    <tr><th>10</th><td>30,3</td><td>29,3</td><td>28,8</td><td>28,4</td></tr>
-    <tr><th>11</th><td>30,7</td><td>29,6</td><td>29,1</td><td>28,6</td></tr>
-    <tr><th>12</th><td>31,1</td><td>29,9</td><td>29,4</td><td>28,8</td></tr>
-    <tr><th>13</th><td>31,4</td><td>30,2</td><td>29,6</td><td>28,9</td></tr>
-    <tr><th>14</th><td>31,6</td><td>30,4</td><td>29,8</td><td>29,0</td></tr>
-    <tr><th>15</th><td>31,8</td><td>30,6</td><td>29,9</td><td>29,0</td></tr>
-    <tr><th>16</th><td>31,9</td><td>30,7</td><td>29,9</td><td>29,0</td></tr>
-    <tr><th>17</th><td>32,0</td><td>30,8</td><td>30,0</td><td>29,0</td></tr>
-    <tr><th>18</th><td>32,0</td><td>30,9</td><td>30,0</td><td>29,0</td></tr>
-    <tr><th>19</th><td>32,1</td><td>30,9</td><td>30,0</td><td>29,0</td></tr>
-    <tr><th>20</th><td>32,1</td><td>31,0</td><td>30,0</td><td>29,0</td></tr>
-    <tr><th>21</th><td>32,1</td><td>31,0</td><td>30,0</td><td>29,0</td></tr>
-    <tr><th>22</th><td>32,0</td><td>31,0</td><td>30,0</td><td>29,0</td></tr>
+    <tr><th>1</th><td>21.7</td><td>21.2</td><td>20.9</td><td>20.7</td></tr>
+    <tr><th>2</th><td>22.7</td><td>22.2</td><td>21.9</td><td>21.7</td></tr>
+    <tr><th>3</th><td>23.7</td><td>23.2</td><td>22.9</td><td>22.7</td></tr>
+    <tr><th>4</th><td>24.7</td><td>24.2</td><td>23.9</td><td>23.7</td></tr>
+    <tr><th>5</th><td>25.7</td><td>25.2</td><td>24.9</td><td>24.7</td></tr>
+    <tr><th>6</th><td>26.6</td><td>26.1</td><td>25.8</td><td>25.6</td></tr>
+    <tr><th>7</th><td>27.6</td><td>27.1</td><td>26.8</td><td>26.6</td></tr>
+    <tr><th>8</th><td>28.5</td><td>27.9</td><td>27.6</td><td>27.4</td></tr>
+    <tr><th>9</th><td>29.4</td><td>28.6</td><td>28.3</td><td>28.0</td></tr>
+    <tr><th>10</th><td>30.3</td><td>29.3</td><td>28.8</td><td>28.4</td></tr>
+    <tr><th>11</th><td>30.7</td><td>29.6</td><td>29.1</td><td>28.6</td></tr>
+    <tr><th>12</th><td>31.1</td><td>29.9</td><td>29.4</td><td>28.8</td></tr>
+    <tr><th>13</th><td>31.4</td><td>30.2</td><td>29.6</td><td>28.9</td></tr>
+    <tr><th>14</th><td>31.6</td><td>30.4</td><td>29.8</td><td>29.0</td></tr>
+    <tr><th>15</th><td>31.8</td><td>30.6</td><td>29.9</td><td>29.0</td></tr>
+    <tr><th>16</th><td>31.9</td><td>30.7</td><td>29.9</td><td>29.0</td></tr>
+    <tr><th>17</th><td>32.0</td><td>30.8</td><td>30.0</td><td>29.0</td></tr>
+    <tr><th>18</th><td>32.0</td><td>30.9</td><td>30.0</td><td>29.0</td></tr>
+    <tr><th>19</th><td>32.1</td><td>30.9</td><td>30.0</td><td>29.0</td></tr>
+    <tr><th>20</th><td>32.1</td><td>31.0</td><td>30.0</td><td>29.0</td></tr>
+    <tr><th>21</th><td>32.1</td><td>31.0</td><td>30.0</td><td>29.0</td></tr>
+    <tr><th>22</th><td>32.0</td><td>31.0</td><td>30.0</td><td>29.0</td></tr>
   </tbody>
 </table>
 
