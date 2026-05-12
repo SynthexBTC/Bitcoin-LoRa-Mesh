@@ -21,3 +21,9 @@ To be at the maximum permitted power in Europe : <b>29,15 dBm EIRP</b>, <br>
 The LoRa output power (sx1262) must be set to <b>8 dBm</b> in Meshtatic, Meshcore, RTNode, …<br>
 <br>
 <img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - PCBs.jpg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 001.jpg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 004.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 006.jpg" width="800">
