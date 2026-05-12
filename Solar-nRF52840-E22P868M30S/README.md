@@ -1,5 +1,6 @@
- 
-<img src="images/LoRaNetworks.png" height="300">
+ <img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - Final.jpeg" height="600">
+<br>
+<img src="images/LoRaNetworks.png" height="200">
 <br>
 •	LoRa module <b>E22P-868M30S</b> (<b>1 Watt</b>, PA up to 32dBm, Ultra LNA, SAW filters, …)<br>
 •	<b>nRF52840</b> SoC UltraLow Power<br>
