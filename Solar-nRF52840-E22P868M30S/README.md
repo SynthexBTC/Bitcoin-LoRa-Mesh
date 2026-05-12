@@ -2,6 +2,13 @@
 <br>
 <img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - Final.jpeg" width="800">
 <br>
+
+# nRF52840 E22P868M30S Solar LoRa Node
+<br>
+Ultra Low Power Solar LoRa Node (about 25mA)<br>
+Can operate for weeks during the dark days of winter<br>
+Compatible with Reticulum, Meshcore, Meshtastic, ...<br>
+<br>
 •	LoRa module <b>E22P-868M30S</b> (<b>1 Watt</b>, PA up to 32dBm, Ultra LNA, SAW filters, …)<br>
 •	<b>nRF52840</b> SoC UltraLow Power<br>
 •	Configuration OLED Screen<br>
