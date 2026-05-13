@@ -34,3 +34,20 @@ The LoRa output power (sx1262) must be set to <b>8 dBm</b> in Meshtatic, Meshcor
 <img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 004.jpeg" width="800">
 <br>
 <img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 006.jpg" width="800">
+
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 008.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 009.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 010.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 011.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 013.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 014.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 015.jpeg" width="800">
+<br>
+<img src="images/BitcoinMesh Solar nRF52840 E22P-868M30S - WorkInProgress 016.jpeg" width="800">
