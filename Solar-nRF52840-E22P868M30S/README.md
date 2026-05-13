@@ -14,7 +14,7 @@ Compatible with Reticulum, Meshcore, Meshtastic, ...<br>
 •	Configuration OLED Screen<br>
 •	Telemetry : Temperature and Humidity (<b>AHT20</b>)<br>
 •	Telemetry : Batteries Voltage and Current (<b>INA219</b>)<br>
-•	Watchdog and Scheduled <b>Automatic Restart</b> (PIC <b>16F13124</b>)<br>
+•	Watchdog and Scheduled <b>Automatic Reboot ever 1, 7 or 30 days</b> (PIC <b>16F13124</b>)<br>
 •	RGB LED : Displays battery charging and Watchdog status<br>
 •	Battery charging protection <b>NTC sensor</b>, temperature range from -2°C to 55°C<br>
 •	<b>Dual-independent</b> battery protection. If one fails, the other works (2* DW07D)<br>
