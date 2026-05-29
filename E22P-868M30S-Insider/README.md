@@ -36,6 +36,16 @@ However, to ensure good confuguration, full power and reduced floor noise,<br><b
     </tr>
   </thead>
   <tbody>
+    <tr><th>-9</th><td>11.7</td><td>11.2</td><td>10.9</td><td>10.7</td></tr>
+    <tr><th>-8</th><td>12.7</td><td>12.2</td><td>11.9</td><td>11.7</td></tr>
+    <tr><th>-7</th><td>13.7</td><td>13.2</td><td>12.9</td><td>12.7</td></tr>
+    <tr><th>-6</th><td>14.7</td><td>14.2</td><td>13.9</td><td>13.7</td></tr>
+    <tr><th>-5</th><td>15.7</td><td>15.2</td><td>14.9</td><td>14.7</td></tr>
+    <tr><th>-4</th><td>16.7</td><td>16.2</td><td>15.9</td><td>15.7</td></tr>
+    <tr><th>-3</th><td>17.7</td><td>17.2</td><td>16.9</td><td>16.7</td></tr>
+    <tr><th>-2</th><td>18.7</td><td>18.2</td><td>17.9</td><td>17.7</td></tr>
+    <tr><th>-1</th><td>19.7</td><td>19.2</td><td>18.9</td><td>18.7</td></tr>
+    <tr><th>0</th><td>20.7</td><td>20.2</td><td>19.9</td><td>19.7</td></tr>
     <tr><th>1</th><td>21.7</td><td>21.2</td><td>20.9</td><td>20.7</td></tr>
     <tr><th>2</th><td>22.7</td><td>22.2</td><td>21.9</td><td>21.7</td></tr>
     <tr><th>3</th><td>23.7</td><td>23.2</td><td>22.9</td><td>22.7</td></tr>
