@@ -14,3 +14,6 @@ Compatible with Meshcore, Meshtastic, ...<br>
 •	<b>Solar Panel</b> waterproof and unbreakable <b>6 Watts Actual</b> (325 cm² = <b>50 square inches</b>)<br>
 •	<b>3 dBi antenna</b> (TX868-JKD-20) Tuned with enclosure : SWR≈1 @869,5MHz (with NanoVNA) <br>
 <br>
+<img src="PCB/Wand Solar nRF52840 E22P-868M30S - PCB 3D Front.png" width="1000">
+<br>
+<img src="PCB/Wand Solar nRF52840 E22P-868M30S - PCB 3D Back.png" width="1000">
