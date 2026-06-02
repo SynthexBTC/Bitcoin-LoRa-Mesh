@@ -7,8 +7,8 @@ Compatible with Meshcore, Meshtastic, ...<br>
 •	LoRa module <b>E22P-868M30S</b> (<b>1 Watt</b>, PA up to 32dBm, Ultra LNA, SAW filters, …)<br>
 •	<b>nRF52840</b> SoC UltraLow Power<br>
 •	Telemetry : Batteries Voltage, Temperature and Humidity (<b>AHT20</b>)<br>
-•	<b>Automatic shutdown by watchdog if the battery voltage is below 3.5v</b> (PIC <b>16F13113</b>)<br>
-•	<b>Automatic restart by the external watchdog programmed weekly</b> (PIC <b>16F13113</b>)<br>
+•	<b>Automatic shutdown and restart by external watchdog if the battery voltage is below 3.5v</b> (PIC <b>16F13113</b>)<br>
+•	<b>Automatic reboot by external watchdog programmed weekly</b> (PIC <b>16F13113</b>)<br>
 •	18650 Li-ion batteries (<b>Lii-King4000</b>) for a max total capacity of 8000mAh<br>
 •	IP68 waterproof enclosure in a <b>32mm diameter</b>, 50cm high rod, containing the antenna, module and batteries<br>
 •	<b>Solar Panel</b> waterproof and unbreakable <b>6 Watts Actual</b> (325 cm² = <b>50 square inches</b>)<br>
