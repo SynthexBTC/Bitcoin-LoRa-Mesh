@@ -8,7 +8,7 @@ Compatible with Meshcore, Meshtastic, ...<br>
 •	<b>nRF52840</b> SoC UltraLow Power<br>
 •	Telemetry : Batteries Voltage, Temperature and Humidity (<b>AHT20</b>)<br>
 •	Watchdog <b>Automatic Shutdown if batterie is under 3.5v</b> (PIC <b>16F13113</b>)<br>
-•	Watchdog <b>Automatic Scheduled Reboot ever 7 days</b> (PIC <b>16F13113</b>)<br>
+•	Watchdog <b>Automatic Scheduled Reboot every weeks</b> (PIC <b>16F13113</b>)<br>
 •	18650 Li-ion batteries (<b>Lii-King4000</b>) for a max total capacity of 8000mAh<br>
 •	IP68 waterproof <b>32mm wand</b>b> enclosure<br>
 •	<b>Solar Panel</b> waterproof and unbreakable <b>6 Watts Actual</b> (325 cm² = <b>50 square inches</b>)<br>
