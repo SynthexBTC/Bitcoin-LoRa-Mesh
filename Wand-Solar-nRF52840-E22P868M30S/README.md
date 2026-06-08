@@ -19,3 +19,5 @@ Compatible with Meshcore, Meshtastic, ...<br>
 <img src="images/Wand Solar nRF52840 E22P-868M30S - PCB 3D Front.png" width="1000">
 <br>
 <img src="images/Wand Solar nRF52840 E22P-868M30S - PCB 3D Back.png" width="1000">
+<br>
+<img src="images/Wand Solar nRF52840 E22P-868M30S - Wand Beta 2.jpeg" width="1000">
