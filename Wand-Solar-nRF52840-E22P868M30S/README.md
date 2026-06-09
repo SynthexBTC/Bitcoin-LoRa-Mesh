@@ -1,6 +1,6 @@
 # nRF52840 E22P868M30S Solar Wand LoRa Node
 <br>
-<img src="images/Wand Solar nRF52840 E22P-868M30S - Preview.jpg" height="1000">
+<p><img src="images/Wand Solar nRF52840 E22P-868M30S - Preview.jpg" height="1000">nbsp;<img src="images/Wand Solar nRF52840 E22P-868M30S - Build 01.jpg" height="1000"></p>
 <br>
 Ultra Low Power Solar LoRa Node (about 25mA)<br>
 Can operate for weeks during the dark days of winter<br>
