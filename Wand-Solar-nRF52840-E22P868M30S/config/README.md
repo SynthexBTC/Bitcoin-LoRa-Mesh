@@ -38,7 +38,11 @@ set radio 869.618,62.5,8,8
 ---
 
 ### TX Power
-Set transmit power in dBm.
+Set transmit power in dBm.  
+  
+The power output must be set to 22 dBm.  
+With the E22P-868M30S module powered by 3.3 volts, the output is approximately 28 dBm and the antenna gain is approximately 1.7 dBi.  
+Considering losses in the connectors and PVC pipe, we are therefore close to the legal limit of 29.15 dBm.  
 ```
 set tx 22
 ```
