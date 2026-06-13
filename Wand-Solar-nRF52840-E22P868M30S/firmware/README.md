@@ -5,7 +5,7 @@
 ## New Features
 
 ### GPS Auto-Cycle
-GPS powers on automatically every **30 minutes**, acquires a fix, **syncs the system clock**, then powers off.
+GPS powers on automatically every **30 minutes**, acquires a fix, **syncs the system clock**, then powers off.  
 Maximum time to obtain a fix: **2 minutes** (timeout — GPS powers off regardless).
 
 | State | GPS | Comment |
