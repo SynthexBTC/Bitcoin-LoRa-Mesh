@@ -22,7 +22,7 @@ At boot, firmware waits up to **5 seconds** for the GPS module to send its first
 A `SoftwareTimer` wakes the CPU every **60 seconds** to check the GPS cycle timer, ensuring the auto-cycle triggers even when no LoRa traffic is present.
 
 ### LFXO Clock Source
-Switched from internal RC oscillator (LFRC) to external 32kHz crystal (LFXO) for accurate `millis()` timing during sleep — required for reliable GPS cycle timing.
+Switched from internal RC oscillator (LFRC) to external 32kHz crystal (LFXO) for **accurate system clock** and timing during sleep.
 > A good 32kHz crystal is present and functional on the Wand PCB.
 
 
