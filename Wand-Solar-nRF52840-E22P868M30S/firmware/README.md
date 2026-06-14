@@ -23,7 +23,7 @@ A `SoftwareTimer` wakes the CPU every **60 seconds** to check the GPS cycle time
 
 ### LFXO Clock Source
 Switched from internal RC oscillator (LFRC) to external 32kHz crystal (LFXO) for accurate `millis()` timing during sleep — required for reliable GPS cycle timing.
-> A good 32kHz crystal is present and functional on my PCB.
+> A good 32kHz crystal is present and functional on the Wand PCB.
 
 
 
@@ -50,7 +50,7 @@ gps pos
 ---
 
 ### `env`
-Displays battery and environmental AHT10 sensor data.
+Displays battery and environmental sensor data.
 
 ```
 env
