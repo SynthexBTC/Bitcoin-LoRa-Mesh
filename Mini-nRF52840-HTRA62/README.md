@@ -2,6 +2,9 @@
   
 Ultra Mini and Ultra Low Power LoRa Node  
 Only 33mm x 18mm x 8mm !
+
+The total power consumption is 6mA when receiving and about 100mA when transmitting.   
+which for Meshcore in "Moderate Repeater" is an average current of **7mA** !
   
 Tiny but with Big capabilities :  
 - Ultra Low Power nRF52840 SoC
