@@ -1,4 +1,6 @@
 # Mini nRF52840 SX1262 LoRa Node
+
+<img src="images/Mini-nRF52840-HTRA62 - 001.jpg" width="600">
   
 Ultra Mini and Ultra Low Power LoRa Node  
 Only 33mm x 18mm x 8mm !
@@ -13,5 +15,7 @@ Tiny but with Big capabilities :
 - TP4054 Li-ion charger for mini solar panel
 - Battery voltage monitoring
 
+<img src="images/Mini-nRF52840-HTRA62 - 004.jpeg" width="600">  
+<img src="images/Mini-nRF52840-HTRA62 - 003.jpeg" width="600">  
 <img src="images/Mini-nRF52840-HTRA62 - 3D.png" height="600">  
-<img src="images/Mini-nRF52840-HTRA62 - 3D Up.png" height="600">  
+<img src="images/Mini-nRF52840-HTRA62 - 3D Up.png" height="600"> 
