@@ -14,9 +14,9 @@ briefly every 32 seconds to check the battery:
 
 - If the battery stays **below 3.4 V for 10 minutes**, it shuts everything down:
   the nRF52840 is held in reset and the radio is disabled.
-- If the battery stays **above 3.8 V**, it starts everything again:
+- If the battery voltage rises **above 3.8 V**, it starts everything again:
   the nRF52840 is released first, and the radio is enabled 3 seconds later.
-- Between 3.4 V and 3.7 V, nothing changes — this gap prevents the system from
+- Between 3.4 V and 3.8 V, nothing changes — this gap prevents the system from
   switching on and off repeatedly around a single threshold.
 
 Short voltage dips or spikes are ignored: a change is only acted upon if it lasts
