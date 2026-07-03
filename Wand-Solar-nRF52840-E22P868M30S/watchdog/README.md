@@ -1,4 +1,4 @@
-# WandWatchDog
+# Wand WatchDog
 
 Battery voltage watchdog based on a PIC16F13113 microcontroller.
 
@@ -16,7 +16,7 @@ briefly every 32 seconds to check the battery:
   the nRF52840 is held in reset and the radio is disabled.
 - If the battery voltage rises **above 3.8 V**, it starts everything again:
   the nRF52840 is released first, and the radio is enabled 3 seconds later.
-- Between 3.4 V and 3.8 V, nothing changes — this gap prevents the system from
+- Between 3.4 V and 3.8 V, nothing changes, this gap prevents the system from
   switching on and off repeatedly around a single threshold.
 
 Short voltage dips or spikes are ignored: a change is only acted upon if it lasts
@@ -24,10 +24,10 @@ the full confirmation time.
 
 ## Power consumption
 
-About half a microamp on average — low enough to run for years on a battery.
+About half a microamp on average, low enough to run for years on a battery.
 
 ## Hardware
 
 - Microcontroller: PIC16F13113 (also works on PIC16F13114 and PIC16F13115)
 - Built with MPLAB X and the XC8 compiler
-- Programmed with ICSP port
+- Programmed with MPLAB SNAP (PG164100) on ICSP port
