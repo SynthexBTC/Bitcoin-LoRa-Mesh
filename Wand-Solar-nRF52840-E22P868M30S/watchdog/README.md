@@ -21,7 +21,10 @@ The system also gets a nRF52840 reset, just to make sure everything comes back u
 
 ### When it's too cold or too hot
 
-If the temperature drops below **-2°C** or climbs above **60°C**, charging is switched off to protect the battery. As soon as the temperature comes back into a normal range, charging switches back on. This check happens every single time it wakes up, so it reacts quickly in both directions.
+If the temperature drops below **0°C** or climbs above **50°C**, charging is switched off to protect the battery.    
+If the temperature drops below **-20°C** or climbs above **65°C**, the battery turns also off.  The system is completely paused; the battery is isolated, with neither charging nor discharging taking place.    
+As soon as the temperature comes back into a normal range, charging and/or battery switches back on.  
+This check happens every single time it wakes up, so it reacts quickly in both directions.
 
 ## Power consumption
 
