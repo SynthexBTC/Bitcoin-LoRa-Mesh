@@ -2,6 +2,8 @@
 
 Battery **voltage** and **temperature** watchdog based on a PIC16F13113 microcontroller.
 
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - Schematics v8 WatchDog.png">
+
 ## What it does
 
 This little module keeps an eye on your power and temperature, and takes care of your battery automatically.  
