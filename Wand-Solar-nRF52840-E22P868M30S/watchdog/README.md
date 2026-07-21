@@ -19,11 +19,6 @@ The battery remains connected to the charger so it can be recharged by the sun, 
 As soon as the power is good again **3.8v**, the battery turns back on right away.  
 The system also gets a nRF52840 reset, just to make sure everything comes back up cleanly.
 
-### When power is in between
-
-If the power is neither clearly low nor clearly good, nothing changes.  
-The module just keeps whatever state it was already in.
-
 ### When it's too cold or too hot
 
 If the temperature drops below **-2°C** or climbs above **60°C**, charging is switched off to protect the battery. As soon as the temperature comes back into a normal range, charging switches back on. This check happens every single time it wakes up, so it reacts quickly in both directions.
