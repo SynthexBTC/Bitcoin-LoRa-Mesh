@@ -12,6 +12,7 @@ Every 32 seconds, it wakes up, takes a quick look at the power level and the tem
 ### When power is low
 
 If the power stays low **3.4v** for a full 10 minutes, the battery turns off. It waits those 10 minutes on purpose, so a short, harmless dip in power doesn't trigger anything.
+The battery remains connected to the charger so it can be recharged by the sun, with no further discharging.
 
 ### When power comes back
 
