@@ -1,6 +1,6 @@
 # Wand WatchDog
 
-Battery voltage watchdog based on a PIC16F13113 microcontroller.
+Battery **voltage** and **temperature** watchdog based on a PIC16F13113 microcontroller.
 
 ## What it does
 
