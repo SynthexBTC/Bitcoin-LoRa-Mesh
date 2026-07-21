@@ -5,7 +5,6 @@ Battery **voltage** and **temperature** watchdog based on a PIC16F13113 microcon
 ## What it does
 
 This little module keeps an eye on your power and temperature, and takes care of your battery automatically.  
-No buttons, no screen — it just runs quietly in the background.
 
 Every 32 seconds, it wakes up, takes a quick look at the power level and the temperature, then goes back to sleep.
 
