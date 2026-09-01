@@ -12,7 +12,7 @@ Every 32 seconds, it wakes up, takes a quick look at the power level and the tem
 
 ### When power is low
 
-If the power stays low **3.4v** for a full 10 minutes, the battery turns off. It waits those 10 minutes on purpose, so a short, harmless dip in power doesn't trigger anything.
+If the power stays low **3.3v** for a full 10 minutes, the battery turns off. It waits those 10 minutes on purpose, so a short, harmless dip in power doesn't trigger anything.
 The battery remains connected to the charger so it can be recharged by the sun, with no further discharging.
 
 ### When power comes back
@@ -22,7 +22,7 @@ The system also gets a nRF52840 reset, just to make sure everything comes back u
 
 ### When it's too cold or too hot
 
-If the temperature drops below **0°C** or climbs above **50°C**, charging is switched off to protect the battery.    
+If the temperature drops below **0°C** or climbs above **47°C**, charging is switched off to protect the battery.    
 If the temperature drops below **-20°C** or climbs above **65°C**, the battery turns also off.  The system is completely paused; the battery is isolated, with neither charging nor discharging taking place.    
 As soon as the temperature comes back into a normal range, charging and/or battery switches back on.  
 This check happens every single time it wakes up, so it reacts quickly in both directions.
@@ -33,7 +33,7 @@ About half a microamp on average, low enough to run for years on a battery.
 
 ## Hardware
 
-- Microcontroller: PIC16F13113 (also works on PIC16F13114 and PIC16F13115)
+- Microcontroller : PIC16F13113, PIC16F13114 or PIC16F13115
 - Built with MPLAB X and the XC8 compiler
 - Programmed with MPLAB SNAP (PG164100) on ICSP port
 
