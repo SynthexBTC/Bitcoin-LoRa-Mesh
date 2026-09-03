@@ -1,6 +1,6 @@
 # Wand WatchDog
 
-Battery **voltage** and **temperature** watchdog based on a PIC16F13113 microcontroller.
+Battery **voltage** and **temperature** watchdog based on a PIC16F13114 microcontroller.
 
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - Schematics v8 WatchDog.png">
 
@@ -14,13 +14,13 @@ Every 32 seconds, it wakes up, takes a quick look at the power level and the tem
 
 - **At startup**: `BAT_EN` is set to the "battery disabled" state, a pulse is sent on `RESET_CPU`, then the module goes into permanent sleep (WDT wake-up every 32 s).
 - **On each wake-up**, the module measures VDD and temperature, then applies the following rules:
-  - If VDD stays **below the low threshold** for the confirmation duration `BAT_SEUIL_BAS_S` (10 min by default) → the battery is **disabled** (`BAT_EN` cut off).
-  - If VDD exceeds the **high threshold** (after confirmation `BAT_SEUIL_HAUT_S`) → the battery is **re-enabled** (`BAT_EN`), followed by a pulse on `RESET_CPU`.
-  - If temperature goes outside the range `[TEMP_SEUIL_BAS_C ; TEMP_SEUIL_HAUT_C]` (0 °C to 47 °C by default) → **charging is disabled** (`CHRG_EN`); within the normal range, charging is allowed.
-  - If temperature exceeds `TEMP_SEUIL_URGENCE_HAUT_C` (65 °C by default) or drops below `TEMP_SEUIL_URGENCE_BAS_C` (-20 °C by default) → **total safety shutdown** (both battery and charging disabled), with absolute priority over any other logic.
-  - When temperature returns to the normal range after a thermal emergency, the battery is **re-enabled immediately** (without waiting for the `BAT_SEUIL_HAUT_S` delay), provided VDD is not below the low threshold.
+  - If VDD stays **below the low threshold** for the confirmation duration `BAT_LOW_S` (10 min by default) → the battery is **disabled** (`BAT_EN` cut off).
+  - If VDD exceeds the **high threshold** (after confirmation `BAT_HIGH_S`) → the battery is **re-enabled** (`BAT_EN`), followed by a pulse on `RESET_CPU`.
+  - If temperature goes outside the range `[TEMP_LOW_C ; TEMP_HIGH_C]` (0 °C to 47 °C by default) → **charging is disabled** (`CHRG_EN`); within the normal range, charging is allowed.
+  - If temperature exceeds `TEMP_DANGER_HIGH_C` (65 °C by default) or drops below `TEMP_DANGER_LOW_C` (-20 °C by default) → **total safety shutdown** (both battery and charging disabled), with absolute priority over any other logic.
+  - When temperature returns to the normal range after a thermal emergency, the battery is **re-enabled immediately** (without waiting for the `BAT_HIGH_S` delay), provided VDD is not below the low threshold.
 
-⚠️ **Note on timing accuracy**: the module only wakes up every 32 seconds (no real-time clock). Confirmation durations (`BAT_SEUIL_BAS_S`, `BAT_SEUIL_HAUT_S`) are therefore always **rounded up to the next multiple of 32 s**. For example, an entered value between 1 and 32 s results in an actual delay of 32 s, between 33 and 64 s an actual delay of 64 s, and so on. The value stored and read back via `GET` remains exactly the one entered; only the physically observed delay is quantized in 32 s steps (always rounded up, so never less protective than requested).
+⚠️ **Note on timing accuracy**: the module only wakes up every 32 seconds (no real-time clock). Confirmation durations (`BAT_LOW_S`, `BAT_HIGH_S`) are therefore always **rounded up to the next multiple of 32 s**. For example, an entered value between 1 and 32 s results in an actual delay of 32 s, between 33 and 64 s an actual delay of 64 s, and so on. The value stored and read back via `GET` remains exactly the one entered; only the physically observed delay is quantized in 32 s steps (always rounded up, so never less protective than requested).
 
 ## Power consumption
 
@@ -63,7 +63,7 @@ Commands and parameter names are case-insensitive.
 | Command | Description | Response |
 |---|---|---|
 | `GET TEMP` or `GET TEMPERATURE` | Current temperature | in °C |
-| `GET VOLTAGE` or `GET MV` | Current VDD voltage | in mV (**0 = measurement failure**) |
+| `GET VOLTAGE` or `GET MV` | Current VDD voltage | in mV |
 | `GET VERSION` or `GET VER` | Firmware version | version string |
 
 ---
@@ -72,16 +72,16 @@ Commands and parameter names are case-insensitive.
 
 | Name | Meaning | Unit | Min | Max | Default |
 |---|---|---|---|---|---|
-| `BAT_SEUIL_BAS_MV` | VDD low threshold → disables `BAT_EN` (after confirmation `BAT_SEUIL_BAS_S`) | mV | 0 | 8191 | 3300 |
-| `BAT_SEUIL_HAUT_MV` | VDD high threshold → re-enables `BAT_EN` + `RESET_CPU` pulse (after confirmation `BAT_SEUIL_HAUT_S`) | mV | 0 | 8191 | 3800 |
-| `BAT_SEUIL_BAS_S` | Confirmation duration before battery shutdown — 32 s resolution | s | 0 | 8160 | 600 |
-| `BAT_SEUIL_HAUT_S` | Confirmation duration before re-enable — 32 s resolution | s | 0 | 8160 | 0 |
-| `TEMP_SEUIL_BAS_C` | Below this threshold → `CHRG_EN` disabled | °C | -8192 | 8191 | 0 |
-| `TEMP_SEUIL_HAUT_C` | Above this threshold → `CHRG_EN` disabled | °C | -8192 | 8191 | 47 |
-| `TEMP_SEUIL_URGENCE_HAUT_C` | Above this threshold → total shutdown (`BAT_EN` + `CHRG_EN`) | °C | -8192 | 8191 | 65 |
-| `TEMP_SEUIL_URGENCE_BAS_C` | Below this threshold → total shutdown (`BAT_EN` + `CHRG_EN`) | °C | -8192 | 8191 | -20 |
+| `BAT_LOW_MV` | VDD low threshold → disables `BAT_EN` (after confirmation `BAT_LOW_S`) | mV | 0 | 8191 | 3300 |
+| `BAT_HIGH_MV` | VDD high threshold → re-enables `BAT_EN` + `RESET_CPU` pulse (after confirmation `BAT_HIGH_S`) | mV | 0 | 8191 | 3800 |
+| `BAT_LOW_S` | Confirmation duration before battery shutdown — 32 s resolution | s | 0 | 8160 | 600 |
+| `BAT_HIGH_S` | Confirmation duration before re-enable — 32 s resolution | s | 0 | 8160 | 0 |
+| `TEMP_LOW_C` | Below this threshold → `CHRG_EN` disabled | °C | -8192 | 8191 | 0 |
+| `TEMP_HIGH_C` | Above this threshold → `CHRG_EN` disabled | °C | -8192 | 8191 | 47 |
+| `TEMP_DANGER_HIGH_C` | Above this threshold → total shutdown (`BAT_EN` + `CHRG_EN`) | °C | -8192 | 8191 | 65 |
+| `TEMP_DANGER_LOW_C` | Below this threshold → total shutdown (`BAT_EN` + `CHRG_EN`) | °C | -8192 | 8191 | -20 |
 | `TEMP_OFFSET_C` | Additive offset applied to the temperature reading (measured_c + offset) | °C | -8192 | 8191 | -2 |
-| `REBOOT_J` | Automatic reboot period (battery cut/re-enable + reset pulse); 0 = disabled | days | 0 | 8191 | 0 |
+| `REBOOT_D` | Automatic reboot period (battery cut/re-enable + reset pulse); 0 = disabled | days | 0 | 8191 | 0 |
 | `RESET_PULSE_MS` | Duration of the `RESET_CPU` pulse | ms | 0 | 8191 | 1000 |
 | `BAT_CUT_PULSE_MS` | Duration of `BAT_EN` cutoff (at startup and before each periodic reboot) | ms | 0 | 8191 | 5000 |
 
@@ -91,7 +91,7 @@ Commands and parameter names are case-insensitive.
 
 ```
 > GET VERSION
-VERSION=v1.3
+VERSION=v8.2.3
 
 > GET TEMP
 TEMP=23
@@ -99,13 +99,13 @@ TEMP=23
 > GET VOLTAGE
 VOLTAGE=3980
 
-> SET BAT_SEUIL_BAS_MV 3200
+> SET BAT_LOW_MV 3200
 OK
 
-> GET BAT_SEUIL_BAS_MV
-BAT_SEUIL_BAS_MV=3200
+> GET BAT_LOW_MV
+BAT_LOW_MV=3200
 
-> SET BAT_SEUIL_BAS_MV 99999
+> SET BAT_LOW_MV 99999
 ERR
 ```
 
