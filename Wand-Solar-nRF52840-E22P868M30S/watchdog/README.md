@@ -23,6 +23,8 @@ Every 16 seconds, it wakes up, takes a quick look at the power level and the tem
 
 ⚠️ **Note on timing accuracy**: the module only wakes up every 16 seconds (no real-time clock). Confirmation durations (`BAT_LOW_S`, `BAT_OK_S`, `BAT_HIGH_S`) are therefore always **rounded up to the next multiple of 16 s**. For example, an entered value between 1 and 16 s results in an actual delay of 16 s, between 17 and 32 s an actual delay of 32 s, and so on. The value stored and read back via `GET` remains exactly the one entered; only the physically observed delay is quantized in 16 s steps (always rounded up, so never less protective than requested — at worst 15 s more).
 
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram.jpg">
+
 ## Power consumption
 
 About half a microamp on average, low enough to run for years on a battery.
