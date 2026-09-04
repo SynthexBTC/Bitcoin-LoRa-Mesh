@@ -10,9 +10,6 @@ This little module keeps an eye on your power and temperature, and takes care of
 
 Every 16 seconds, it wakes up, takes a quick look at the power level and the temperature, then goes back to sleep.
 
-**The key feature is the management of the Meshcore board's reset (RESET_BTN) and complete shutdown (BAT_EN), which makes it possible to reboot even the most stubborn boards,
-to ensures a clean reboot.**
-
 ## Operating Logic
 
 - **At startup**: `BAT_EN` is set to the "battery disabled" state, a pulse is sent on `RESET_CPU`, then the module goes into permanent sleep (WDT wake-up every 16 s).
@@ -29,6 +26,11 @@ to ensures a clean reboot.**
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram VDD.jpg">
 
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram Temp.jpg">
+
+**The key feature is the management of the Meshcore board's reset (RESET_BTN) and complete shutdown (BAT_EN), which makes it possible to reboot even the most stubborn boards,
+to fully discharge capacitors to ensures a clean reboot.**
+
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram Reset.jpg">
 
 ## Power consumption
 
