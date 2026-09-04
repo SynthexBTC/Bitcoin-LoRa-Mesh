@@ -1,4 +1,4 @@
-# Wand WatchDog
+# Wand Smart Battery Management System
 
 Battery **voltage** and **temperature** watchdog based on a PIC16F13114 microcontroller.
 
