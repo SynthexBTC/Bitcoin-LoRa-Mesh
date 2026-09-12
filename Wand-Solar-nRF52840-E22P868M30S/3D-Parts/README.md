@@ -1,3 +1,10 @@
+
+Be careful when choosing the 32mm PVC pipe !  
+The internal diameter must be at least 28mm.  
+Some low-quality pipes have a much smaller diameter.  
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - Tube 32mm Thickness .jpeg" width="500">
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - Tube 32mm Inner .jpeg" width="500">
+
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - 3D PETG.jpeg" width="1000">
 <table border="1">
   <tr><th>Top</th><th>Bottom</th></tr>
