@@ -54,6 +54,10 @@ Configuration is done via the module's ICSP port, connected to a USB-to-serial a
 - Speed: **1200 baud**
 - Format: **8N1** (8 data bits, no parity, 1 stop bit)
 
+**Please note : the Wand must be powered by its own battery to be configured.**
+
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Prog Cnx.jpeg" width=500>&nbsp;<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial Prog.jpeg" width=500>
+
 ---
 
 ## Command Syntax
