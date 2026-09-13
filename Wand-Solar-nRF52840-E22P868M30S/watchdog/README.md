@@ -45,6 +45,8 @@ Configuration is done via the module's ICSP port, connected to a USB-to-serial a
 
 | ICSP Port | ↔ | USB-Serial Adapter |
 |---|---|---|
+| pin 1  | ↔ |  |
+| pin 2  | ↔ |  |
 | pin 3 = GND | ↔ | GND |
 | pin 4 = ICSPDAT = TX | ↔ | RX |
 | pin 5 = ICSPCLK = RX | ↔ | TX |
@@ -56,7 +58,9 @@ Configuration is done via the module's ICSP port, connected to a USB-to-serial a
 
 **Please note : the Wand must be powered by its own battery to be configured.**
 
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Prog Cnx.jpeg" width=500>&nbsp;<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial Prog.jpeg" width=500>
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial CNX.jpeg" width=500>
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial Prog.jpeg" width=500>
+<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Prog Cnx.jpeg" width=500>
 
 ---
 
