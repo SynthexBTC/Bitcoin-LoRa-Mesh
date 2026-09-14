@@ -20,8 +20,11 @@ Some low-quality pipes have a much smaller diameter.
   <tr><td><img src="../images/Wand Solar nRF52840 E22P-868M30S - 3D Top C.png" width="600"></td><td><img src="../images/Wand Solar nRF52840 E22P-868M30S - 3D Bottom D.png" width="600"></td></tr>
 </table>
 
+Above all, **don't forget to tie a knot in the cable** !
+Otherwise, it’s difficult, or even impossible, to pull on the cable to disassemble it !
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - Cork Cable.jpeg" width="800">
-3mm Hole :
+
+**3mm** Hole :  
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - Tube Screw Hole.jpeg" width="500">
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - Tube Screw.jpeg" width="500">
 
