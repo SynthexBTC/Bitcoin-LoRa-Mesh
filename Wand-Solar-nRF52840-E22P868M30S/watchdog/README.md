@@ -48,8 +48,8 @@ Configuration is done via the module's ICSP port, connected to a USB-to-serial a
 | pin 1  | ↔ |  |
 | pin 2  | ↔ |  |
 | pin 3 = GND | ↔ | GND |
-| pin 4 = ICSPDAT = TX | ↔ | RX |
-| pin 5 = ICSPCLK = RX | ↔ | TX |
+| pin 4 = ICSPDAT = **TX** | ↔ | **RX** |
+| pin 5 = ICSPCLK = **RX** | ↔ | **TX** |
 
 **Serial link parameters:**
 
