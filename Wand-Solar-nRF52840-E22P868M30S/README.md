@@ -1,7 +1,11 @@
 # nRF52840 E22P868M30S Solar Wand LoRa Node
-<br>
+
+### Super White Wand
 <p><img src="images/Wand Solar nRF52840 E22P-868M30S - Super White Mounted.jpeg" height="1000">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Wand Solar nRF52840 E22P-868M30S - Super White.jpeg" height="1000"></p>
+
+### Super Stealth Wand
 <p><img src="images/Wand Solar nRF52840 E22P-868M30S - Super Stealth Mounted.jpeg" height="1000">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Wand Solar nRF52840 E22P-868M30S - Super Stealth.jpeg" height="1000"></p>
+
 <br>
 Ultra Low Power Solar LoRa Node (on average 19mA)<br>
 Can operate for weeks during the dark days of winter<br>
