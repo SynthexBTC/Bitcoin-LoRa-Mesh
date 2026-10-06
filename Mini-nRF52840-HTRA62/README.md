@@ -19,5 +19,7 @@ Tiny but with Big capabilities :
 <img src="images/Mini-nRF52840-HTRA62 - 003.jpeg" width="600">  
 <img src="images/Mini-nRF52840-HTRA62 - 010.jpeg" width="1000">  
 <img src="images/Mini-nRF52840-HTRA62 - 011.jpeg" width="1000">  
+<img src="images/Mini-nRF52840-HTRA62 - Green Red 001.jpeg" width="1000">  
+<img src="images/Mini-nRF52840-HTRA62 - Green Red 002.jpeg" width="1000">  
 <img src="images/Mini-nRF52840-HTRA62 - Orange Box 002.jpeg" width="1000">  
 <img src="images/Mini-nRF52840-HTRA62 - Orange Box 003.jpeg" width="1000">  
