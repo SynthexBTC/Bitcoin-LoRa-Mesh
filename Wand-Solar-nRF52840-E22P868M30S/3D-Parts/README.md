@@ -36,5 +36,5 @@ Otherwise, it’s difficult, or even impossible, to pull on the cable to disasse
 
 <table border="1">
   <tr><td><img src="../images/Wand Solar nRF52840 E22P-868M30S - Batteries Holder Final.jpeg" width="1000"></td></tr>
-  <tr><td><img src="../images/Wand Solar nRF52840 E22P-868M30S - 3D Holder.png" width="1000"></td></tr>
+  <tr><td><img src="../images/Wand Solar nRF52840 E22P-868M30S -21700 Support.jpeg" width="1000"></td></tr>
 </table>
