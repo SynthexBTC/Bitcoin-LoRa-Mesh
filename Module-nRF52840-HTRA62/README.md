@@ -15,3 +15,7 @@ BitcoinMesh LoRa Module with UltraLow-Power nRF52840 SoC and 2000mAh LiPo Batter
 <img src="images/BitcoinMesh Module - CloseView4.jpg" width="500">
 <img src="images/BitcoinMesh Module - CloseView1.jpg" width="500">
 <img src="images/BitcoinMesh Module - ARMY.jpg" width="800">
+<img src="images/Module nRF52840 HTRA62 - 18650 001.jpeg" width="800">
+<img src="images/Module nRF52840 HTRA62 - 18650 x9 001.jpeg" width="800">
+<img src="images/Module nRF52840 HTRA62 - 18650 x9 000.jpeg" width="800">
+<img src="images/Module nRF52840 HTRA62 - 18650 x9 004.jpeg" width="800">
