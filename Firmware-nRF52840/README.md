@@ -3,9 +3,11 @@
 ## 1. Get the right file
 
 1. Open the page for the role you want:
-   - Companion : https://flasher.meshcore.io/promicro-nrf52-faketec/companion-bluetooth/  
+   - Companion : https://flasher.meshcore.io/promicro-nrf52-faketec/companion-bluetooth/
+       
      <img src="images/Meshcore-Download-Firmware-BLE.png">
-   - Repeater  : https://flasher.meshcore.io/promicro-nrf52-faketec/repeater/  
+   - Repeater  : https://flasher.meshcore.io/promicro-nrf52-faketec/repeater/
+       
      <img src="images/Meshcore-Download-Firmware-RPT.png">
 2. Click **Download** to get a copy of the firmware files.
 3. Pick the `.uf2` file
