@@ -56,8 +56,8 @@ Configuration is done via the module's ICSP port, connected to a USB-to-serial a
 - Speed: **1200 baud**
 - Format: **8N1** (8 data bits, no parity, 1 stop bit)
 
-**Please note : the Wand must be powered by its own battery to be configured.**
-
+⚠️ **Note** : **the Wand must be powered by its own battery to be configured.**  
+  
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial CNX.jpeg" width=500>
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial Prog.jpeg" width=500>
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Prog Cnx.jpeg" width=500>
@@ -71,6 +71,8 @@ Two commands are available:
 - `GET NAME` → response `NAME=value` or `ERR` (or, for `GET INFOS`, a multi-line response, see below)
 - `SET NAME value` → response `OK` or `ERR`
 
+⚠️ **Note** : Configure your terminal to send the whole command at once, followed by an end-of-line character (NL and/or CR).  
+  
 **Important: a successful `SET` immediately saves all parameters to Flash memory** (no separate save command needed).
 
 Commands and parameter names are case-insensitive.
