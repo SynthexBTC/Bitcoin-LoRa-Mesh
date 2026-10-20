@@ -168,3 +168,11 @@ REBOOT_D : 0
 - Any change made via `SET` is **saved immediately and automatically** to Flash memory, it is therefore retained after a power loss.
 
 ---
+
+## Update Firmware
+
+You can update the PIC16F13114 Firmware with a **Microchip SNAP (PG164100)** Programmer.  
+
+1. Install MPLAB X IDE (it includes MPLAB IPE), connect the SNAP to the PC via USB, and wire it to the powered target through the 8-pin header (pin 1 = MCLR/VPP, 2 = VDD, 3 = GND, 4 = PGD, 5 = PGC).
+2. Open MPLAB IPE, select the PIC model (16F13114) and the Snap as the tool, click Connect, then browse to the last `.hex` file.
+3. Click Program and confirm that the programming and verify steps both pass.
