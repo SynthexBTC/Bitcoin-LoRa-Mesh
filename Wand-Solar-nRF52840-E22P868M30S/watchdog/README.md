@@ -156,6 +156,11 @@ REBOOT_D : 0
 
 ## Points of Attention for the User
 
+- **Parameter consistency** : a SET operation that violates one of these rules returns ERR, and the value remains unchanged :  
+ BAT_LOW_MV < BAT_OK_MV < BAT_HIGH_MV  
+ TEMP_DANGER_LOW_C < TEMP_LOW_C < TEMP_HIGH_C < TEMP_DANGER_HIGH_C  
+ BAT_CUT_PULSE_MS + RESET_PULSE_MS ≤ 12000  
+
 - A `VOLTAGE`/`MV` value of **0** indicates a **voltage measurement failure**, not an actual zero voltage (physically impossible during normal operation).
 - The total safety shutdown (high or low thermal emergency) takes **absolute priority over all VDD/charging logic**: it applies even when voltage conditions would normally call for re-enabling the battery.
 - `BAT_OK_MV`/`BAT_OK_S` control **re-enabling the battery** (`BAT_EN`); `BAT_HIGH_MV`/`BAT_HIGH_S` are a **separate, independent** overvoltage cutoff on **charging** (`CHRG_EN`) only, the two thresholds are not related and can be set independently.
