@@ -87,6 +87,7 @@ Commands and parameter names are case-insensitive.
 | `GET VOLTAGE` or `GET MV` | Current VDD voltage | in mV (0 = measurement failure) |
 | `GET VERSION` or `GET VER` | Firmware version | version string |
 | `GET INFOS` | Summary of the main thresholds, grouped by topic | 4 lines — see format below |
+| `GET STATUS` | Current status of sensors and outputs | 4 lines — see format below |
 
 ### `GET INFOS` response format
 
@@ -97,6 +98,15 @@ BAT_MV : BAT_LOW_MV ; BAT_OK_MV ; BAT_HIGH_MV
 BAT_S : BAT_LOW_S ; BAT_OK_S ; BAT_HIGH_S
 TEMP_C : TEMP_DANGER_LOW_C ; TEMP_LOW_C ; TEMP_HIGH_C ; TEMP_DANGER_HIGH_C
 REBOOT_D : REBOOT_D
+```
+
+### `GET STATUS` response format
+
+```
+TEMP_C : 25
+BAT_V : 4.185
+BAT_EN : ENABLED
+CHRG_EN : ENABLED
 ```
 
 ---
@@ -176,6 +186,8 @@ You can update the PIC16F13114 Firmware with a **Microchip SNAP (PG164100)** Pro
 1. Install MPLAB X IDE (it includes MPLAB IPE), connect the SNAP to the PC via USB, and wire it to the powered target through the 8-pin header (pin 1 = MCLR/VPP, 2 = VDD, 3 = GND, 4 = PGD, 5 = PGC).
 2. Open MPLAB IPE, select the PIC model (16F13114) and the Snap as the tool, click Connect, then browse to the last `.hex` file.
 3. Click Program and confirm that the programming and verify steps both pass.
+
+⚠️ Note : the Wand must be powered by its own battery to be updated.  
   
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - MPLAB SNAP.jpg" width=400>
   
