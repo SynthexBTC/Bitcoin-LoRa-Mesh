@@ -20,7 +20,7 @@
    
    <img src="images/Meshcore-Firmware-Folder.png">
 
-## 3. Flash
+## 3. Flash the file
 
 1. Drag and drop the `.uf2` file onto the USB drive.
 2. Wait for the copy to finish. The drive should disappear and the board should reboot.
@@ -34,10 +34,9 @@
 
 **If you are using a new ProMicro, you must flash the 3 files in order:**
 
-<img src="images/Meshcore-Download-Firmware-FIRST.png">
-
 1. Flash the file `promicro_nrf52840_bootloader-0.9.2-OTAFIX2.2.uf2`.
 2. Flash the file `FLASH_ERASE_nrf52_softdevice_v6.uf2`.
 3. Flash the MeshCore firmware you downloaded above: `promicro_xxxxx.uf2`.
 
+<img src="images/Meshcore-Download-Firmware-FIRST.png">
 
