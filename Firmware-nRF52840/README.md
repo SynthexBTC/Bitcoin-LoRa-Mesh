@@ -29,6 +29,8 @@
    The board reboots as soon as the file is written, so the drive disappears before Windows can confirm the copy.
    This error is expected and can be safely ignored.
 
+   **Tip:** This update preserves the node settings.
+   
 
 # Flash a new ProMicro nRF52
 
