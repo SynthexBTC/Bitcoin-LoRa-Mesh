@@ -1,4 +1,4 @@
-# Flashing MeshCore on ProMicro nRF52
+# Upgrade MeshCore Firmware on ProMicro nRF52
 
 ## 1. Get the right file
 
