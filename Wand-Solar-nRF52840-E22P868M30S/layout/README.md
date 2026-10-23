@@ -1,6 +1,8 @@
+# PCB Layout
+
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - Layout.png" width="1000">
 
-
+# Component List
 
 | ID | Value | Format |
 |----|-------|--------|
@@ -43,7 +45,7 @@
 | J3 | SMA Female | SMD 1.6mm |
 | S1 | Push-Button | SMD 3x4x2mm |
 | S2 | Push-Button | SMD 3x4x2mm |
-
+| GPS | ATGM336H | Board |
 
 
 
