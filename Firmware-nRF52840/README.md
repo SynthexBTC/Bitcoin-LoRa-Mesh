@@ -15,7 +15,7 @@
 ## 2. Enter bootloader mode
 
 1. Plug the board into your computer with a **data-capable** USB cable.
-2. **Press the RESET button TWICE** in quick succession.
+2. **Press the RESET or REBOOT button TWICE** in quick succession.
 3. The board should appear as a USB drive (drive name: `PROMICRO`).
    
    <img src="images/Meshcore-Firmware-Folder.png">
