@@ -120,9 +120,9 @@ Commands and parameter names are case-insensitive. Values are integers of **at m
 
 | Command | Description | Response |
 |---|---|---|
-| `GET TEMP` or `GET TEMPERATURE` | Current temperature | in °C |
-| `GET VOLTAGE` or `GET MV` | Current VDD voltage | in mV (0 = measurement failure) |
-| `GET VERSION` or `GET VER` | Firmware version | version string |
+| `GET TEMP` | Current temperature | in °C |
+| `GET MV` | Current VDD voltage | in mV (0 = measurement failure) |
+| `GET VER` | Firmware version | version string |
 | `GET INFOS` | Summary of the main thresholds, grouped by topic | 4 lines — see format below |
 | `GET STATUS` | Current status of sensors and outputs | 4 lines — see format below |
 
