@@ -2,7 +2,7 @@
 
 Battery **voltage** and **temperature** watchdog based on a PIC16F13114 microcontroller.
 
-Firmware version: **v8.5.0**
+Firmware version: **v8.5.X**
 
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - Schematics v8 WatchDog 2.png">
 
