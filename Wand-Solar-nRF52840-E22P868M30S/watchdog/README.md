@@ -64,14 +64,13 @@ Optional: every `REBOOT_D` days, the module cuts the battery for 5 s, switches i
 ### Good to know
 
 - **Timing**: the module checks every ~17 s, so all durations are rounded up to a multiple of 17 s and are approximate. They are never shorter than requested. A value of 0 acts immediately.
-- **Temperature**: the module measures the temperature of its own chip, not of the battery cell, with an accuracy of about ±5 °C. It does not replace a dedicated thermal protection of the battery.
 - **Power consumption**: very low, the chip sleeps almost all the time.
 
 ---
 
 ## Version LED
 
-An optional LED (with a 1 kΩ resistor, between ICSPDAT and GND) can be connected through a **jumper**. At startup it blinks the version.
+An optional LED (with a 1 kΩ resistor, between PIN4 and GND) can be connected through a **jumper**. At startup it blinks the version.
 
 - Fit the jumper only to check the version, then remove it (otherwise the LED stays lit and drains the battery).
 - Do not fit it while a programmer or the USB-serial adapter is connected.
@@ -82,15 +81,20 @@ An optional LED (with a 1 kΩ resistor, between ICSPDAT and GND) can be connecte
 
 ### Connection
 
-Connect a **3.3 V** USB-serial adapter to the module's ICSP port:
+Configuration is done via the module's ICSP port, connected to a USB-to-serial adapter.
 
 | ICSP port | ↔ | USB-serial adapter |
 |---|---|---|
+| pin 1  | ↔ |  |
+| pin 2  | ↔ |  |
 | pin 3 = GND | ↔ | GND |
 | pin 4 = **TX** | ↔ | **RX** |
 | pin 5 = **RX** | ↔ | **TX** |
 
-Settings: **1200 baud, 8N1**.
+**Serial link parameters:**
+
+- Speed: **1200 baud**
+- Format: **8N1** (8 data bits, no parity, 1 stop bit)
 
 ⚠️ The Wand must be powered by its own battery.
 
