@@ -124,7 +124,6 @@ Tips:
 |---|---|
 | `GET STATUS` | Version, temperature, voltage, state of the outputs |
 | `GET INFOS` | Summary of all thresholds |
-| `GET T90` | Temperature sensor self-test (should be about 90) |
 
 **`GET STATUS`**
 
@@ -154,7 +153,6 @@ REBOOT_D : 0
 - `TEMP_C`: danger low (on/off) ; charging min ; charging max ; danger high (off/on)
 - `REBOOT_D`: periodic reboot (days)
 
-**`GET T90`**: `T90=90` (80 to 100) means the temperature sensor is OK. Any other value means it is faulty: the battery then stays off for safety.
 
 ### Settings
 
@@ -207,13 +205,13 @@ BAT_LOW_MV=3300
 > SET BAT_LOW_MV 1000
 ERR
 
-> SET TEMP_DANGER_HYST_C 5
+> SET TEMP_DANGER_HYST_C 2
 OK
 
 > GET INFOS
 BAT_MV : 3300 ; 3800 ; 4280
 BAT_S : 600 ; 0 ; 0
-TEMP_C : -20/-15 ; 0 ; 47 ; 60/65
+TEMP_C : -20/-18 ; 0 ; 47 ; 63/65
 REBOOT_D : 0
 ```
 
@@ -242,6 +240,5 @@ After updating, with USB serial link:
 
 - Run `GET STATUS`: if `PARAMS : ERR`, your settings were reset; re-apply them with `SET`.
 - Run `GET INFOS` to check your settings.
-- Run `GET T90` (should be about 90).
 
 <img src="../images/Wand Solar nRF52840 E22P-868M30S - MPLAB SNAP.jpg" width=400>
