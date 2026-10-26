@@ -171,7 +171,7 @@ REBOOT_D : 0
 | `TEMP_DANGER_LOW_C` | At or below → total shutdown | °C | -40 | 125 | -20 |
 | `TEMP_DANGER_HIGH_C` | At or above → total shutdown | °C | -40 | 125 | 65 |
 | `TEMP_DANGER_HYST_C` | Margin to leave the total shutdown | °C | 0 | 41 (*) | 3 |
-| `TEMP_OFFSET_C` | Temperature correction | °C | -8192 | 8191 | -2 |
+| `TEMP_OFFSET_C` | Temperature correction | °C | -8192 | 8191 | -3 |
 | `REBOOT_D` | Periodic reboot, 0 = off | days | 0 | 8191 | 0 |
 | `RESET_PULSE_MS` | Reset pulse duration | ms | 0 | 8191 | 1000 |
 | `BAT_CUT_PULSE_MS` | Battery cut duration (startup, reboot) | ms | 0 | 8191 | 5000 |
