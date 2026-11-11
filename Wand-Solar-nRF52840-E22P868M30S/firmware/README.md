@@ -1,7 +1,11 @@
 # MeshCore ProMicro nRF52840 Custom Firmware
 
-Based on MeshCore **v1.18.0** — the `ver` command shows **`v1.18.0-Synthex`**.
+Based on MeshCore **v1.18.0** — the `ver` command shows **`v1.18.0-Synthex`**.  
 
+**This firmware is really useful if you have a GPS mounted on the Wand, which is not the case by default.**  
+**Otherwise, you can install the official firmware, as shown [here](https://github.com/SynthexBTC/Bitcoin-LoRa-Mesh/tree/main/Firmware-nRF52840).**  
+
+  
 ## Which Firmware to Install
 
 Two versions are available. They have exactly the same features; only the clock differs.
