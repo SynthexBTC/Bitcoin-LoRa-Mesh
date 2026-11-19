@@ -1,6 +1,6 @@
 # ZEUS : Solar Battery WatchDog
 
-**Battery protection and power-cycle reboot for solar boards**
+**Battery protection and power-cycle reboot for solar-powered board Node** (like Heltec v3, Heltec v4, ...)
 
 <img src="images/Zeus Solar Battery WatchDog - 3D Top A.png" height="400">
 
