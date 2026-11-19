@@ -2,6 +2,8 @@
 
 **Battery protection and power-cycle reboot for solar boards**
 
+<img src="images/Zeus Solar Battery WatchDog - 3D Top A.png" height="400">
+
 Battery **voltage** and **temperature** watchdog for a solar-powered board (called the **main board** below), based on a PIC16F13115 microcontroller.
 
 The WatchDog board sits between the solar panel, the Li-ion cell and the main board, which carries the solar charger.
