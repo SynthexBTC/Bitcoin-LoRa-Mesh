@@ -194,7 +194,7 @@ Configuration is done through the module's ICSP port, connected to a USB-to-seri
 
 ⚠️ The WatchDog must be powered by its Li-ion cell (`LI-ION` connector).
 
-<img src="images/Zeus Solar Battery WatchDog - SBMS WatchDog Prog Prog.jpeg" width=500>
+<img src="images/Zeus Solar Battery WatchDog - SBMS WatchDog Serial Prog.jpeg" width=500>
 
 ### Waking the module up
 
