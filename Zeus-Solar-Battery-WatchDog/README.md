@@ -147,11 +147,11 @@ The voltage and temperature protections can each be switched off, for testing or
 
 ⚠️ With **both** protections off, the battery and charging stay **on** permanently, with **no supervision at all**.
 
-<img src="../images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram Reset.jpg">
+<img src="images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram Reset.jpg">
 
-<img src="../images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram VDD.jpg">
+<img src="images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram VDD.jpg">
 
-<img src="../images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram Temp.jpg">
+<img src="images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram Temp.jpg">
 
 ### Good to know
 
@@ -194,9 +194,7 @@ Configuration is done through the module's ICSP port, connected to a USB-to-seri
 
 ⚠️ The WatchDog must be powered by its Li-ion cell (`LI-ION` connector).
 
-<img src="../images/Zeus Solar Battery WatchDog - SBMS WatchDog Serial CNX.jpeg" width=500>
-<img src="../images/Zeus Solar Battery WatchDog - SBMS WatchDog Serial Prog.jpeg" width=500>
-<img src="../images/Zeus Solar Battery WatchDog - SBMS WatchDog Prog Cnx.jpeg" width=500>
+<img src="images/Zeus Solar Battery WatchDog - SBMS WatchDog Prog Prog.jpeg" width=500>
 
 ### Waking the module up
 
