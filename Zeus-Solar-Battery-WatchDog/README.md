@@ -383,4 +383,3 @@ After programming, with the USB serial link:
 - Run `GET T90`: about `90` = OK.
 - Run `GET INFOS` to check the thresholds, and adjust them with `SET` if needed.
 
-<img src="../images/Zeus Solar Battery WatchDog - MPLAB SNAP.jpg" width=400>
