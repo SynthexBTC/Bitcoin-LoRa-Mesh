@@ -147,11 +147,11 @@ The voltage and temperature protections can each be switched off, for testing or
 
 ⚠️ With **both** protections off, the battery and charging stay **on** permanently, with **no supervision at all**.
 
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram Reset.jpg">
+<img src="../images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram Reset.jpg">
 
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram VDD.jpg">
+<img src="../images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram VDD.jpg">
 
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS Watchdog Diagram Temp.jpg">
+<img src="../images/Zeus Solar Battery WatchDog - SBMS Watchdog Diagram Temp.jpg">
 
 ### Good to know
 
@@ -194,9 +194,9 @@ Configuration is done through the module's ICSP port, connected to a USB-to-seri
 
 ⚠️ The WatchDog must be powered by its Li-ion cell (`LI-ION` connector).
 
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial CNX.jpeg" width=500>
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Serial Prog.jpeg" width=500>
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - SBMS WatchDog Prog Cnx.jpeg" width=500>
+<img src="../images/Zeus Solar Battery WatchDog - SBMS WatchDog Serial CNX.jpeg" width=500>
+<img src="../images/Zeus Solar Battery WatchDog - SBMS WatchDog Serial Prog.jpeg" width=500>
+<img src="../images/Zeus Solar Battery WatchDog - SBMS WatchDog Prog Cnx.jpeg" width=500>
 
 ### Waking the module up
 
@@ -385,4 +385,4 @@ After programming, with the USB serial link:
 - Run `GET T90`: about `90` = OK.
 - Run `GET INFOS` to check the thresholds, and adjust them with `SET` if needed.
 
-<img src="../images/Wand Solar nRF52840 E22P-868M30S - MPLAB SNAP.jpg" width=400>
+<img src="../images/Zeus Solar Battery WatchDog - MPLAB SNAP.jpg" width=400>
