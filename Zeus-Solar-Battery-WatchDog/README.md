@@ -1,6 +1,7 @@
 # ZEUS : Solar Battery WatchDog
 
-**Battery protection and power-cycle reboot for solar-powered board Node** (like Wand without WatchDog, XIAO nRF52840 & Wio-SX1262, Heltec, ...)
+**Battery protection and power-cycle reboot for solar-powered board Node**  
+(like Wand without WatchDog, XIAO nRF52840 & Wio-SX1262, Heltec, ...)  
 
 <img src="images/Zeus Solar Battery WatchDog - 3D Top A.png" height="400"><img src="images/Zeus Solar Battery WatchDog - 3D Top C.png" height="400">  
 <img src="images/Zeus Solar Battery WatchDog - 3D Top B.png" height="600">  
@@ -236,6 +237,17 @@ An optional LED (with a 1 kΩ resistor, between ICSP pin 4 and GND) can be conne
 - UART mode only: no blink when a DS18B20 is detected.
 - Fit the jumper only to check the version, then remove it. Otherwise the LED stays lit and drains the battery, and it prevents the DS18B20 from being detected.
 - Do not fit it while a programmer or the USB-serial adapter is connected.
+
+---
+
+## Why a linear charger (CN3163) and not an switching charger (CN3791)
+
+The ZEUS Charger uses a simple linear charger, the CN3163, instead of a switching charger such as the CN3791.
+
+- **Full sun:** with a 5-6 V solar panel, a switching charger would collect only about 10 to 20 % more energy.
+- **Hazy sun and weak winter light:** this advantage disappears. The switching charger uses more power for itself, which becomes a large part of the little power available. The linear charger passes almost all of it to the cell.
+- **At night:** the CN3163 draws very little current from the cell, **10 times less** than the CN3791.
+- **Radio:** a switching charger switches its current on and off about 300,000 times per second. This creates electrical noise that can reach the radio and reduce its sensitivity. A linear charger does not switch, so it adds no such noise.
 
 ---
 
