@@ -2,7 +2,8 @@
 
 **Battery protection and power-cycle reboot for solar-powered board Node** (like Wand without WatchDog, Heltec v3, Heltec v4, ...)
 
-<img src="images/Zeus Solar Battery WatchDog - 3D Top A.png" height="400">
+<img src="images/Zeus Solar Battery WatchDog - 3D Top A.png" height="400"><img src="images/Zeus Solar Battery WatchDog - 3D Top C.png" height="400">  
+<img src="images/Zeus Solar Battery WatchDog - 3D Top B.png" height="600">  
 
 Battery **voltage** and **temperature** watchdog for a solar-powered board (called the **main board** below), based on a PIC16F13115 microcontroller.
 
