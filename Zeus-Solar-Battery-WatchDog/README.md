@@ -7,9 +7,19 @@
 
 Battery **voltage** and **temperature** watchdog for a solar-powered board (called the **main board** below), based on a PIC16F13115 microcontroller.
 
-The WatchDog board sits between the solar panel, the Li-ion cell and the main board, which carries the solar charger.
+Firmware version: **v10.0.X** (same firmware for both versions)
 
-Firmware version: **v10.0.X** (WatchDog board settings)
+## Two versions
+
+| | **ZEUS** | **ZEUS Charger** |
+|---|---|---|
+| Solar charger | On the **main board** | **On the ZEUS Charger board** |
+| For | A main board that has its own solar charger | A main board without solar charger, or whose charger you do not use |
+| Connectors | 4: solar panel, main board solar input, Li-ion cell, main board battery input | 3: solar panel, Li-ion cell, main board battery input |
+| Charge current | Set by the main board | Set by jumpers on the board |
+| Charge status LEDs | — | Red = charging, green = charge complete |
+
+Everything in [How it works](#how-it-works), [Configuration](#configuration-serial-link) and [Programming](#programming-the-firmware) applies to both versions. The differences are described in [ZEUS](#zeus) and [ZEUS Charger](#zeus-charger) below.
 
 ## What it does
 
@@ -17,15 +27,21 @@ This little module keeps an eye on your battery and temperature, and protects th
 
 About every 17 seconds, it wakes up, checks the battery voltage and the temperature, acts if needed, then goes back to sleep.
 
-It controls the main board with three switches:
+It controls three switches:
 
-| Output | Switch | Effect |
+| Output | **ZEUS** | **ZEUS Charger** |
 |---|---|---|
-| `CHRG_EN` | Solar panel | **Charging off** = the solar panel is disconnected from the main board |
-| `BAT_EN` | Li-ion cell | **Battery off** = the cell no longer powers the main board |
-| `RESET_CPU` | Main board power | **Reset** = the main board is completely unpowered for `RESET_PULSE_MS` (5 s) and its capacitors are discharged, then it is powered again |
+| `CHRG_EN` | **Charging off** = the solar panel is disconnected from the main board | **Charging off** = the on-board charger is switched off |
+| `BAT_EN` | **Battery off** = the cell no longer powers the main board | Same |
+| `RESET_CPU` | **Reset** = the main board is completely unpowered for `RESET_PULSE_MS` (5 s) and its capacitors are discharged, then it is powered again | Same |
 
-The reset needs **no wire** to the main board's processor: cutting the main board ground removes both the battery and the solar panel, so the whole main board restarts cleanly, with or without sun.
+The reset needs **no wire** to the main board's processor: the main board ground is cut, so the whole main board restarts cleanly, with or without sun.
+
+⚠️ The main board must have **no other ground connection** with the WatchDog or the cell (USB cable, debug probe, common metal case...) while it is running. Otherwise the reset does not cut its power.
+
+---
+
+## ZEUS
 
 ### Connections
 
@@ -43,6 +59,57 @@ The reset needs **no wire** to the main board's processor: cutting the main boar
 When the battery is off, the main board charger can still **recharge the cell**. Nothing to do: a deeply discharged cell recovers by itself in the sun, and the battery is switched back on as soon as its voltage exceeds `BAT_OK_MV`.
 
 While the battery is off, the cell can only be charged up to about **3.5 V**. This is why `BAT_OK_MV` is limited to **3500 mV** (default **3400 mV**): a higher value would never be reached, and the battery would never be switched back on.
+
+---
+
+## ZEUS Charger
+
+### Connections
+
+| Connector | Goes to |
+|---|---|
+| `SOLAR` | Solar panel |
+| `LI-ION` | Li-ion cell |
+| `BAT_NODE` | Main board battery input |
+
+- Follow the **+ / −** marking of the board and wire **+ to +**, not pin 1 to pin 1, before the first power-up.
+- The main board solar input stays **unconnected**.
+- The cell and the solar panel are protected against reverse polarity.
+
+### Solar panel
+
+Use a **5 V or 6 V solar panel**.
+
+### Charge current
+
+Close one or more jumpers (`A`, `B`, `C`) to choose the maximum charge current. **At least one jumper must be closed**, otherwise the cell is not charged.
+
+| Jumpers closed | Charge current |
+|---|---|
+| A | 120 mA |
+| B | 250 mA |
+| A + B | 370 mA |
+| C | 500 mA |
+| A + C | 610 mA |
+| B + C | 750 mA |
+| A + B + C | 870 mA |
+
+- Choose a current close to the panel current at maximum power. A higher setting is harmless: the charger reduces the current by itself when the panel cannot supply it.
+- The charger gets warm at high current: leave some air around the board.
+
+### Charge LEDs
+
+| LEDs | Meaning |
+|---|---|
+| Red | Charging |
+| Green | Charge complete |
+| Both off | No sun, or charging switched off by the WatchDog |
+
+The LEDs are powered by the solar panel: they do not drain the cell.
+
+### Charging while the battery is off
+
+When the battery is off, the on-board charger still **recharges the cell normally, up to full charge**. Nothing to do: a deeply discharged cell recovers by itself in the sun, and the battery is switched back on as soon as its voltage exceeds `BAT_OK_MV`.
 
 ---
 
@@ -158,7 +225,7 @@ The voltage and temperature protections can each be switched off, for testing or
 
 - **Timing**: the module checks every ~17 s, so all durations are rounded up to a multiple of 17 s and are approximate. They are never shorter than requested. A value of 0 acts immediately.
 - **Power consumption**: very low, the chip sleeps almost all the time.
-- **While the PIC is not running** (power-up, programming), the battery and the solar panel stay **connected** to the main board, without supervision, until the program starts and switches them off.
+- **While the PIC is not running** (power-up, programming), the battery and charging stay **on**, without supervision, until the program starts and switches them off.
 
 ---
 
@@ -288,8 +355,8 @@ REBOOT_D : 0
 
 Why these voltage limits:
 
-- `BAT_LOW_MV` ≥ 3100: protects the cell while it is recharged with the battery off, and keeps the DS18B20 working.
-- `BAT_OK_MV` ≤ 3500: see [Charging while the battery is off](#charging-while-the-battery-is-off).
+- `BAT_LOW_MV` ≥ 3100: protects the cell while it is recharged with the battery off (ZEUS), and keeps the DS18B20 working.
+- `BAT_OK_MV` ≤ 3500: see [ZEUS, Charging while the battery is off](#charging-while-the-battery-is-off). The same firmware is used on the ZEUS Charger, so the same limits apply.
 - `RESET_PULSE_MS` = 5000: the main board is unpowered for 5 s, which is enough for a clean restart. Shorten it only after checking that your main board really restarts.
 - `BAT_CUT_PULSE_MS` = 0: the reset pulse alone already power-cycles the main board.
 
@@ -383,4 +450,3 @@ After programming, with the USB serial link:
   - `TEMP_PROT` and `VOLT_PROT` should both be `ON`.
 - Run `GET T90`: about `90` = OK.
 - Run `GET INFOS` to check the thresholds, and adjust them with `SET` if needed.
-
